@@ -1,5 +1,5 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Enviie/New-Verts-Hub-Crack/main/Encrypt.lua"))("Encrypt")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Enviie/New-Verts-Hub-Crack/main/Encrypt1.lua"))("Arabic String")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/3JBH/BoomBox-Hub/main/Verts-Hub/Encrypt.lua"))("Encrypt")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/3JBH/BoomBox-Hub/main/Verts-Hub/Encrypt1.lua"))("Arabic String")
 local Request, GetAsset = nil, nil
 if (syn and syn.request) then
 	Request = syn.request 
