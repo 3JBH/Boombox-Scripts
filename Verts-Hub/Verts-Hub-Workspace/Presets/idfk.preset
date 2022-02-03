@@ -1,0 +1,23 @@
+for i, v in next, tools do
+    coroutine.wrap(
+        function()
+            local BP, BG, F = v.POSV.Value, v.GYROV.Value
+            local a, vol = 1, 0
+	    local wave = 1
+	    local pos = 1
+            while vis do
+                vol = tools[#tools].Handle.Sound.PlaybackLoudness / sens
+                ro = math.rad(a/2 + (i * (360 / #tools)))
+		vector = math.sin((wave/100)+(i/#tools)*(math.pi+210),0)
+                F = CFrame.new(torso.Position) * CFrame.Angles(0, ro, vector) * CFrame.new(vol, 7, vol + offset) 
+                BP.Position = F.p + Vector3.new(math.sin((wave/100)+(i/#tools)*(math.pi+2),0), vector/#tools, 0)
+                BG.CFrame = CFrame.new(BG.Parent.Position, torso.Position + Vector3.new(0, tilt, 0))
+                a = a + speed/2
+		wave = wave + 1
+                game:GetService("RunService").Heartbeat:wait()
+                v.Handle.Velocity = Vector3.new(0, 0, 30)
+		v.Handle.AssemblyLinearVelocity = Vector3.new(30,0,0)
+            end
+        end
+    )()
+end
