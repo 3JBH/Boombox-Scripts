@@ -6,7 +6,7 @@ if not isfile('MARs-Hub-Content/MARs-Hub-Description.txt') then writefile('MARs-
 
 if not isfolder('MARs-Hub-Content/Logged-Audios') then makefolder('MARs-Hub-Content/Logged-Audios') end
 
-local HUBV4,Notification = game:GetObjects("rbxassetid://&assetversionid=8661822270")[1],game:GetObjects('rbxassetid://&assetversionid=8649177980')[1]
+local HUBV4,Notification = game:GetObjects("rbxassetid://&assetversionid=9474794321")[1],game:GetObjects('rbxassetid://&assetversionid=9474839008')[1]
 
 HUBV4['Parent'] = game:GetService'CoreGui'
 
